@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.shawn.sunshineweather.R
 import kotlinx.android.synthetic.main.fragmemt_place.*
 
+/**
+ * 搜索地址展示界面
+ */
 class PlaceFragment : Fragment() {
     val viewModel by lazy { ViewModelProviders.of(this).get(PlaceViewModel::class.java) }
 
