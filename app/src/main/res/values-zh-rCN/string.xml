@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">晴天</string>
+    <string name="search_edit_hint_text">请输入地址</string>
+    <string name="search_no_place_text">未能查询到任何地点</string>
+</resources>

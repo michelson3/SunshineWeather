@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">SunshineWeather</string>
+    <string name="app_name">Sunshine Weather</string>
+    <string name="search_edit_hint_text">Please enter the address</string>
+    <string name="search_no_place_text">No location could be found</string>
 </resources>
