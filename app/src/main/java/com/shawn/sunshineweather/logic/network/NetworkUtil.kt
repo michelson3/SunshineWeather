@@ -1,6 +1,5 @@
 package com.shawn.sunshineweather.logic.network
 
-import com.shawn.sunshineweather.logic.model.WeatherService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

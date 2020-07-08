@@ -1,6 +1,8 @@
-package com.shawn.sunshineweather.logic.model
+package com.shawn.sunshineweather.logic.network
 
 import com.shawn.sunshineweather.AppApplication
+import com.shawn.sunshineweather.logic.model.DailyResponse
+import com.shawn.sunshineweather.logic.model.RealtimeResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

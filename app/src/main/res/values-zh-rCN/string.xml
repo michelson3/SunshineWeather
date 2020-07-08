@@ -3,4 +3,13 @@
     <string name="app_name">晴天</string>
     <string name="search_edit_hint_text">请输入地址</string>
     <string name="search_no_place_text">未能查询到任何地点</string>
+    <string name="weather_forecast_text">预报</string>
+    <string name="life_index_text">生活指数</string>
+    <string name="life_index_cold_risk_text">感冒</string>
+    <string name="life_index_dressing_text">穿衣</string>
+    <string name="life_index_ultaviolet_text">实时紫外线</string>
+    <string name="life_index_car_washing_text">洗车</string>
+    <string name="weather_info_get_failed_text">无法成功获取天气信息</string>
+    <string name="air_quality_index">空气指数</string>
+
 </resources>
