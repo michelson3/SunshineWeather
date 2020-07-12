@@ -56,8 +56,19 @@ class WeatherActivity : AppCompatActivity() {
                 ).show()
                 result.exceptionOrNull()?.printStackTrace()
             }
+            swipeRefreshLayout.isRefreshing = false
         })
+
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary)
+        refreshWeather()
+        swipeRefreshLayout.setOnRefreshListener {
+            refreshWeather()
+        }
+    }
+
+    private fun refreshWeather() {
         viewModel.refreshWeather(viewModel.locationLng, viewModel.locationLat)
+        swipeRefreshLayout.isRefreshing = true
     }
 
     private fun showWeatherInfo(weather: Weather) {
