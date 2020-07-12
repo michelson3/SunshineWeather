@@ -1,6 +1,8 @@
 package com.shawn.sunshineweather.logic
 
 import androidx.lifecycle.liveData
+import com.shawn.sunshineweather.logic.dao.PlaceDao
+import com.shawn.sunshineweather.logic.model.Place
 import com.shawn.sunshineweather.logic.model.Weather
 import com.shawn.sunshineweather.logic.network.NetworkUtil
 import kotlinx.coroutines.Dispatchers
@@ -58,4 +60,11 @@ object Repository {
             }
             emit(result)
         }
+
+    //todo : getSharedPreferences 是耗时操作，建议放在子线程完成。
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+
+    fun getSavedPlace() = PlaceDao.getSavedPlace()
+
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 }
