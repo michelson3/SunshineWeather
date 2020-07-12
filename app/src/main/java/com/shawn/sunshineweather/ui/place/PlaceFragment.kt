@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.shawn.sunshineweather.MainActivity
 import com.shawn.sunshineweather.R
 import com.shawn.sunshineweather.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.fragmemt_place.*
@@ -34,7 +35,7 @@ class PlaceFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        if (viewModel.isSavedPlace()) {
+        if (activity is MainActivity && viewModel.isSavedPlace()) {
             val place = viewModel.getSavedPlace()
             val intent = Intent(context, WeatherActivity::class.java).apply {
                 putExtra("location_lng", place.location.lng)
